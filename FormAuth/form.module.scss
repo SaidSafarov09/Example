@@ -1,0 +1,148 @@
+@import "../../styles/variables/index.scss";
+
+.section {
+  position: relative;
+  width: 100%;
+  @include tablet {
+    width: 488px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.rouble_icon {
+  input {
+    font-family: "Helvetica Neue", sans-serif;
+  }
+}
+
+.formControlLabel svg {
+  fill: #003791 !important;
+}
+
+.title {
+  margin-bottom: 52px;
+  font-weight: bold;
+  font-size: 26px;
+
+  @include tablet {
+    margin-bottom: 38px;
+  }
+
+  @include desktop {
+    margin-bottom: 63px;
+    font-size: 32px;
+  }
+}
+
+.subTitle {
+  width: 100%;
+  max-width: 258px;
+  margin: 0 auto;
+  margin-top: -32px;
+  margin-bottom: 44px;
+
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+
+  @include tablet {
+    max-width: 426px;
+    margin-top: -18px;
+    margin-bottom: 68px;
+
+    line-height: 22px;
+  }
+
+  @include desktop {
+    max-width: 426px;
+    margin-top: -48px;
+  }
+}
+
+div.fieldWrapperAcceptment {
+  margin-bottom: 30px;
+}
+
+div.submitButtonContainer {
+  text-align: center;
+  height: 48px;
+  margin: 0 auto;
+  margin-top: 32px;
+  border-radius: 8px;
+  button {
+    text-transform: capitalize;
+    border-radius: 8px;
+    height: 48px;
+  }
+}
+
+.submitButton {
+  height: 48px;
+  @include tablet {
+    max-width: 224px;
+  }
+
+  @include desktop {
+    max-width: 224px;
+  }
+}
+
+.makeStyles-icon-64 {
+  display: none;
+}
+
+.personalData {
+  margin: -4px 0 11px;
+}
+
+.secondCheckBlock {
+  margin-left: -11px;
+}
+
+.secondCheck {
+  display: flex;
+}
+
+.agreement {
+  color: inherit;
+  padding: 9px 0;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+.agreementLink {
+  font-weight: bold;
+  color: #003791;
+}
+
+.helperText,
+.loginError {
+  color: #f44336;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.66;
+  letter-spacing: 0.03333em;
+  margin-top: -7px;
+  margin-left: 11px;
+}
+
+.displayNone {
+  display: none;
+}
+
+.password_recovery {
+  width: 100%;
+  text-align: center;
+  margin-top: 32px;
+  font-size: 16px;
+  font-family: "Roboto";
+  line-height: 22px;
+  a {
+    color: #003791;
+    text-decoration: none;
+    line-height: 22px;
+  }
+}

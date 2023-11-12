@@ -1,0 +1,158 @@
+@import "../../styles/variables/index.scss";
+
+.section {
+  position: relative;
+  width: 100%;
+  @include tablet {
+    width: 488px;
+    margin: 0;
+    padding: 0;
+  }
+  legend {
+    color: #292929;
+  }
+  label:nth-child(2) {
+    padding-left: 20px;
+    margin: 0;
+  }
+}
+
+.formPopup {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.rouble_icon {
+  input {
+    font-family: "Helvetica Neue", sans-serif;
+  }
+}
+
+.formControlLabel svg {
+  fill: #003791 !important;
+}
+.MuiFormLabel-root.Mui-focused {
+  color: #292929 !important;
+}
+
+.title {
+  margin-bottom: 52px;
+
+  font-weight: bold;
+  font-size: 26px;
+
+  @include tablet {
+    margin-bottom: 38px;
+  }
+
+  @include desktop {
+    margin-bottom: 63px;
+    font-size: 32px;
+  }
+}
+
+.subTitle {
+  width: 100%;
+  max-width: 258px;
+  margin: 0 auto;
+  margin-top: -32px;
+  margin-bottom: 44px;
+
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+
+  @include tablet {
+    max-width: 426px;
+    margin-top: -18px;
+    margin-bottom: 68px;
+
+    line-height: 22px;
+  }
+
+  @include desktop {
+    max-width: 426px;
+    margin-top: -48px;
+  }
+}
+
+div.fieldWrapperAcceptment {
+  margin-bottom: 30px;
+}
+
+div.submitButtonContainer {
+  text-align: center;
+  height: 48px;
+  margin: 0 auto;
+  margin-top: 32px;
+  button {
+    text-transform: capitalize;
+    border-radius: 8px;
+    height: 48px;
+  }
+}
+
+.submitButton {
+  @include tablet {
+    max-width: 224px;
+  }
+
+  @include desktop {
+    max-width: 224px;
+  }
+}
+
+.makeStyles-icon-64 {
+  display: none;
+}
+
+.personalData {
+  margin: -4px 0 11px;
+}
+
+.secondCheckBlock {
+  margin-left: -11px;
+}
+
+.secondCheck {
+  display: flex;
+}
+
+.helperText,
+.loginError {
+  color: #f44336;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.66;
+  letter-spacing: 0.03333em;
+  margin-top: -7px;
+  margin-left: 11px;
+}
+
+.displayNone {
+  display: none;
+}
+
+.password {
+  div {
+    border-radius: 8px;
+  }
+}
+
+.email {
+  div {
+    border-radius: 8px;
+  }
+}
+
+.accept {
+  font-family: Helvetica, Arial, sans-serif;
+  background: none;
+  border-radius: 6px;
+  font-weight: 400;
+  font-size: 10px !important;
+  line-height: 130%;
+  color: #003791;
+}

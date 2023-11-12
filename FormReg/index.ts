@@ -1,0 +1,1 @@
+export { FormReg } from "./FormReg"

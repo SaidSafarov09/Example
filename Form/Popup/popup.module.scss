@@ -1,0 +1,167 @@
+@import "@ecom/ui/style/common/media-queries";
+
+.popupBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popupHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup {
+  width: 328px;
+  height: 565px;
+  background: #fff;
+  border-radius: 4px;
+  padding: 24px 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  @include tablet {
+    width: 414px;
+    height: 565;
+    padding: 24px;
+  }
+  @include desktop {
+    width: 864px;
+    height: 344px;
+    padding: 40px;
+  }
+  @include large-desktop {
+    width: 920px;
+    height: 320px;
+  }
+  .title {
+    color: #292929;
+    font-family: "Roboto";
+    font-size: 26px;
+    font-weight: 700;
+  }
+}
+
+.closeButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 2px;
+}
+
+.showRate {
+  cursor: pointer;
+  font-family: "Roboto";
+  margin-top: 24px;
+  display: flex;
+  padding: 12px 18px;
+  font-size: 16px;
+  align-items: center;
+  border-radius: 24px;
+  background: #f0f4f9;
+  color: #607286;
+  line-height: normal;
+  justify-content: space-between;
+  width: 177px;
+  border: none;
+  @include tablet {
+    margin-top: 0;
+  }
+  @include desktop {
+    width: 143px;
+    height: 43px;
+  }
+  @include large-desktop {
+    width: 177px;
+  }
+  .question {
+    width: 24px;
+    height: 24px;
+    @include desktop {
+      display: none;
+    }
+    @include large-desktop {
+      display: block;
+    }
+  }
+}
+.popupTable {
+  display: flex;
+  .tableList {
+    width: 210px;
+    &:nth-child(4) {
+      .tableTitles,
+      .tableSubtitles {
+        padding-left: 40px;
+      }
+    }
+  }
+  .tableTitles {
+    font-size: 16px;
+    padding: 25px 0 20px 0;
+    border-bottom: 1px solid #e6eaee;
+    line-height: 22px;
+    &:nth-child(4) {
+      padding-left: 40px;
+    }
+    @include desktop {
+      font-size: 15px;
+    }
+    @include large-desktop {
+      padding-bottom: 20px;
+      font-size: 16px;
+    }
+  }
+  .tableSubtitles {
+    padding: 20px 0;
+    color: #101010;
+    font-weight: 600;
+    border-bottom: 1px solid #e6eaee;
+  }
+}
+
+.popupTableMob {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin-top: 25px;
+  .tableListMob {
+    padding-top: 16px;
+    line-height: 22px;
+  }
+  .tableTitleMob {
+    color: #101010;
+    font-weight: 700;
+    line-height: 22px;
+    font-size: 20px;
+  }
+  .title {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  .tableSubtitlesMob {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #101010;
+    font-weight: 600;
+    padding-top: 2px;
+  }
+  .line {
+    width: 100%;
+    height: 1px;
+    background: #e6eaee;
+    margin: 16px 0;
+  }
+}
